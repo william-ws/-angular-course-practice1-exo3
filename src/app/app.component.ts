@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'practice3';
+  valeur: number;
+
+  constructor() {
+    this.valeur = 0;
+  }
+
+  increment() {
+    this.valeur +=2;
+  }
+  decrement() {
+    this.valeur -=2;
+  }
 }
